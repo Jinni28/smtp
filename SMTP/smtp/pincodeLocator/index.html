@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map with Pincode Search</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-brand">
+            <h1>Pincode Locator</h1>
+        </div>
+        <form id="pincodeForm" class="form-inline">
+            <input type="text" id="pincode" name="pincode" placeholder="Enter Pincode" class="form-control">
+            <button type="submit" class="btn">Search</button>
+        </form>
+    </header>
+    <main>
+        <div id="map"></div>
+    </main>
+    <aside class="location-info" id="locationInfo">
+        <h2>Location Info</h2>
+        <div id="locationName"></div>
+        <div id="congestion"></div>
+    </aside>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>
